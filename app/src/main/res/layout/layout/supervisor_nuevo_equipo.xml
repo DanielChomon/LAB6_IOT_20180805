@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Controladores.Supervisor.supervisor_nuevo_equipo">
+
+    <ScrollView
+        android:layout_width="380dp"
+        android:layout_height="550dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCompletarDatos">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/campoTipo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/tipos_equipos" />
+
+            <TextView
+                android:id="@+id/errorTipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seleccione un tipo de equipo válido"
+                android:textColor="@android:color/holo_red_dark"
+                android:visibility="gone"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldSKU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="SKU"
+                android:paddingTop="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/campoSKU"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:padding="5dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldSerie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Número de serie"
+                android:paddingTop="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/campoSerie"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldMarca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Marca"
+                android:paddingTop="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/campoMarca"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldModelo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Modelo"
+                android:paddingTop="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/campoModelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldDescripción"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descripción"
+                android:paddingTop="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/campoDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldFechaRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fecha de registro"
+                android:paddingTop="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/campoFechaRegistro"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="362dp"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_marginTop="156dp"
+                        android:backgroundTint="#54CCC5"
+                        app:icon="@drawable/baseline_camera_alt_24"
+                        app:iconGravity="top"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.423"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imagenEquipo"
+                        android:layout_width="168dp"
+                        android:layout_height="168dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/circulo_blanco" />
+
+                    <TextView
+                        android:id="@+id/textViewSubirFoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="60dp"
+                        android:gravity="center"
+                        android:text="Subir foto"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imagenEquipo"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <Button
+                        android:id="@+id/botonGuardar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="72dp"
+                        android:backgroundTint="#54CCC5"
+                        android:text="Guardar"
+                        app:cornerRadius="5dp"
+                        app:icon="@drawable/baseline_upload_24"
+                        app:iconGravity="textEnd"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.881"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textViewCompletarDatos"
+        android:layout_width="341dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="Complete con los datos del equipo"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="240dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="San Miguel"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="272dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo">
+
+        <TextView
+            android:id="@+id/textViewNuevoEquipo"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="Nuevo equipo"
+            android:textColor="@android:color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

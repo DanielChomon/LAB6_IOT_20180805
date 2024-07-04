@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFAD00"
+    tools:context=".MainActivity">
+
+    <!-- Replace with your actual drawable resource -->
+
+    <TextView
+        android:id="@+id/textViewLab"
+        android:layout_width="299dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="600dp"
+        android:forceDarkAllowed="false"
+        android:text="Bienvenido a tu nuevo banco"
+        android:textAlignment="center"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewBienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="490dp"
+        android:layout_marginEnd="50dp"
+        android:text="YAPLIN"
+        android:textAlignment="center"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        android:textSize="48sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonIngresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="174dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="86dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/textViewLab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonIngresar"
+        android:layout_width="138dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="86dp"
+        android:backgroundTint="#3ACCBD"
+        android:text="Ingresar"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:iconTint="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBienvenido"
+        app:strokeColor="#00BCD4"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controladores.Supervisor.supervisor_descripcion_equipo">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/nombre_super"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="Área Telecom"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/listaReportes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:src="@drawable/baseline_warning_amber_24"
+        app:backgroundTint="#FF9800"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.788"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.756"
+        app:tint="#000000" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/borrarEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:src="@drawable/eliminar"
+        app:backgroundTint="#CA2C2C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.756"
+        app:tint="#000000" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="185dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_super"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textViewDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/search_bkg"
+            android:gravity="center"
+            android:text="Descripción de equipo"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/editarEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:src="@drawable/baseline_edit_24"
+        app:backgroundTint="#54CCC5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.756"
+        app:tint="#000000" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.115">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.698">
+
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="SKU:"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ACSKU"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="D54FDA"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="Número de serie:"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ACSnumeroSerie"
+                    android:layout_width="125dp"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="Lima"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="Tipo:"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ACStipo"
+                    android:layout_width="125dp"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="Lima"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="Marca"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ACSMarca"
+                    android:layout_width="125dp"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="San Miguel"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="Modelo"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ACSmodelo"
+                    android:layout_width="125dp"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="1asd"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="Descripción"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ACSDescripcion"
+                    android:layout_width="125dp"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="Rural"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="Fecha de registro:"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ACSfechaRegistro"
+                    android:layout_width="125dp"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="Rural"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="Fecha de edición:"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ACSfechaEdicion"
+                    android:layout_width="125dp"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="Móvil"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:text="Fotos del equipo:"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="125dp"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/multimedia" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

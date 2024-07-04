@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9D9D9"
+    android:id="@+id/drawer_layout"
+    tools:context=".Controladores.Superadmin.superadmin_perfil_supervisor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="381dp"
+        android:layout_height="214dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.878">
+
+        <TextView
+            android:id="@+id/SAPStitulo_lista"
+            android:layout_width="207dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="SUPERVISOR"
+            android:textColor="@android:color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/SAPSlinearLayout"
+        android:layout_width="387dp"
+        android:layout_height="375dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244">
+
+        <LinearLayout
+            android:id="@+id/SAPSelemento_horizontal1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/foto_super_perfil_superadmin"
+                android:layout_width="168dp"
+                android:layout_height="168dp"
+                app:srcCompat="@drawable/circulo_blanco" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nombre_super_perfil_superadmin"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="Mark Paredes"
+                    android:textColor="@android:color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/correo_super_perfil_superadmin"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/bree_serif"
+                    android:gravity="center"
+                    android:text="mark.paredes@gmail.com"
+                    android:textColor="#151385"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="12dp">
+
+                    <TextView
+                        android:id="@+id/SAPStextView24"
+                        android:layout_width="96dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="50dp"
+                        android:paddingTop="5dp"
+                        android:text="DNI:"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/DNI_super_perfil_superadmin"
+                        android:layout_width="136dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingTop="5dp"
+                        android:text="74829109"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="vertical"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="12dp">
+
+                    <TextView
+                        android:id="@+id/SAPStitulo_telefono"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/bree_serif"
+                        android:paddingLeft="80dp"
+                        android:paddingTop="5dp"
+                        android:text="Telefono:"
+                        android:textColor="#151384"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/telefono_super_perfil_superadmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="2dp"
+                        android:paddingTop="5dp"
+                        android:text="74829109"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="12dp">
+
+                    <TextView
+                        android:id="@+id/SAPStitulo_direccion"
+                        android:layout_width="56dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/bree_serif"
+                        android:paddingLeft="80dp"
+                        android:paddingTop="5dp"
+                        android:text="Dirección:"
+                        android:textColor="#151384"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/direccin_super_perfil_superadmin"
+                        android:layout_width="136dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:paddingHorizontal="2dp"
+                        android:paddingTop="5dp"
+                        android:text="Av. San Miguel"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="107dp"
+                android:layout_height="match_parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/SAPSimageView_active_status"
+                    android:layout_width="45dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/baseline_check_circle_outline_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.506"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/SAPStextView_active_status"
+                    android:layout_width="87dp"
+                    android:layout_height="32dp"
+                    android:text="Activo"
+                    android:textAlignment="center"
+                    android:textColor="#5FCD2B"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.164"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.45" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/SAPSinclude"
+        layout="@layout/superadmin_toolbar"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

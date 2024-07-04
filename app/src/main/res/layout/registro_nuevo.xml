@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6D7D7">
+
+
+    <TextView
+        android:id="@+id/loginRedirectText"
+        android:layout_width="176dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="56dp"
+        android:text="¿Ya tienes una cuenta?"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignUp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="179dp"
+        android:layout_height="58dp"
+
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#3ACCBD"
+        android:text="Registrarse"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:iconTint="#00BCD4"
+        app:layout_constraintBottom_toTopOf="@+id/loginRedirectText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxMostrarContrasena"
+        app:layout_constraintVertical_bias="1.0"
+        app:strokeColor="#00BCD4"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="356dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="41dp"
+        android:text="Registrate"
+        android:textAlignment="center"
+        android:textColor="#100F0F"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/editUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLab"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewLab"
+        android:layout_width="296dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="33dp"
+        android:forceDarkAllowed="false"
+        android:text="Sistema de inventariado de dispositivos"
+        android:textAlignment="center"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutUsuario"
+        android:layout_width="264dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayoutContrasena"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signupEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutContrasena"
+        android:layout_width="264dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutUsuario"
+        tools:ignore="MissingConstraints">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signupPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            tools:ignore="LabelFor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/checkBoxMostrarContrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="350dp"
+        android:text="Mostrar contraseña"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSignUp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

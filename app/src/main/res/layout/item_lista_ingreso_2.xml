@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    <!--android:padding="8dp"-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+
+        android:layout_height="120dp"
+        android:id="@+id/recCard_item_listsuper_admin"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="16dp"
+        app:cardUseCompatPadding="true"
+        android:backgroundTint="@color/celeste_barra_lateral">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:textAlignment="center"
+            android:background="@drawable/card_border"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:id="@+id/textView_name_cardRC_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Pedro Piedra"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewTitle_numbersite_cardRC_admin"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sitios Asignados:"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView_numbersite_cardRC_admin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:text="# "
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView_active_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="12dp"
+                        android:src="@drawable/baseline_check_circle_outline_24" />
+
+                    <TextView
+                        android:id="@+id/textView_status_cardRC_admin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="7dp"
+                        android:text="Activo"
+                        android:textColor="#5FCD2B"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/image_itemSuperList_admin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:src="@drawable/avatar"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
